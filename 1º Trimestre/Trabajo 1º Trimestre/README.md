@@ -44,5 +44,5 @@ Después de añadir los datos de virtualhost habilitamos el site "sudo a2ensite 
 
 Creamos un archivo de configuración para el dominio: <br> <br>
     sudo nano /etc/apache2/sites-available/departamento.centro.intranet.conf <br> <br>
-Después de añadir los datos de virtualhost habilitamos el site
-
+Después de añadir los datos de virtualhost habilitamos el site <br>
+sudo s2ensite departamento.centro.intranet

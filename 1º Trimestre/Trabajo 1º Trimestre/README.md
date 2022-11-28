@@ -16,4 +16,4 @@ sudo ufw app list
 sudo ufw app info “Apache Full”
 sudo ufw allow “Apache Full”
 
-[imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/ufw_app_list.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/ufw_app_list.png)

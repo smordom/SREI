@@ -27,9 +27,7 @@ Y comprobaremos  su estado con: sudo systemctl status apache2
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/reiniciar_sistema.png)
 
-Añadir el dominio “centro.intranet” y “departamento.centro.intranet” en el fichero “host” con:
-
-nano /etc/hosts y añadiremos lo siguiente: <br>
+Añadir el dominio “centro.intranet” y “departamento.centro.intranet” en el fichero “host” con "nano /etc/hosts" y añadiremos lo siguiente: <br>
 
 127.0.0.1 centro.intranet <br>
 127.0.0.1 departamento.centro.intranet

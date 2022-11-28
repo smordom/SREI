@@ -37,3 +37,6 @@ Añadir el dominio “centro.intranet” y “departamento.centro.intranet” en
 Creamos un archivo de configuración para el dominio: <br>
 sudo nano /etc/apache2/sites-available/centro.intranet.conf <br>
 Después de añadir los datos de virtualhost habilitamos el site "sudo a2ensite centro.intranet"
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/nano_centrointranet.png)
+

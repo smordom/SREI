@@ -42,7 +42,7 @@ Después de añadir los datos de virtualhost habilitamos el site "sudo a2ensite 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sites_available.png)
 
-Creamos un archivo de configuración para el dominio:
+Creamos un archivo de configuración para el dominio: <br> 
     sudo nano /etc/apache2/sites-available/departamento.centro.intranet.conf <br>
 Después de añadir los datos de virtualhost habilitamos el site
 

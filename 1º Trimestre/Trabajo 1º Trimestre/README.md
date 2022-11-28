@@ -17,3 +17,7 @@ sudo ufw app info “Apache Full” <br>
 sudo ufw allow “Apache Full” <br>
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/ufw_app_list.png)
+
+Y con esto ya tendríamos listo apache y funcionando: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/apache_funcionando.png)

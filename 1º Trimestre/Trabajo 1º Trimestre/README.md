@@ -21,3 +21,6 @@ sudo ufw allow “Apache Full” <br>
 Y con esto ya tendríamos listo apache y funcionando: 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/apache_funcionando.png)
+
+Reiniciamos apache server con: sudo systemctl restart apache2 <br>
+Y comprobaremos  su estado con: sudo systemctl status apache2 

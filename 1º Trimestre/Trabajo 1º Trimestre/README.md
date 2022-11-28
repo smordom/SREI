@@ -4,4 +4,4 @@ Instalación del servidor web apache Usaremos dos dominios mediante el archivo h
 
 Actualizamos los repositorios con: “sudo apt update”
 
-(https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sudo_apt_update.png?raw=true)
+![textoescrito](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sudo_apt_update.png)

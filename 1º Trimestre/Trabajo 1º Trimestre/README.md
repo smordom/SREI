@@ -107,3 +107,20 @@ Descargamos wordpress y lo instalamos con: <br><br>
 curl -O https://wordpress.org/latest.tar.gz
 tar xzvf latest.tar.gz <br>
 Nota: Descargar en tmp puede dar errores, en mi caso he tenido que descargarlo en otra carpeta.
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/instalar_wordpress.png) <br>
+
+Ahora crearemos un archivo .htaccess para que wordpress pueda utilizarlo: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/touch.png) <br>
+Y copiamos el archivo de configuración de muestra al nombre del que lee
+wordpress
+cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_wordpress.png)
+
+Podemos crear el directorio de actualización para que wordpress no tenga problemas de permisos y copiamos el contenido de root de documentos: <br>
+- mkdir /tmp/wordpress/wp-content/upgrade <br>
+- sudo cp -a /tmp/wordpress/./var/www/centro.intranet <br> <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/mkdir_upgrade.png)

@@ -126,4 +126,15 @@ Podemos crear el directorio de actualización para que wordpress no tenga proble
 - sudo cp -a /tmp/wordpress/./var/www/centro.intranet <br> <br>
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/mkdir_upgrade.png)
-![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_wordp_centrointranet.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_wordp_centrointranet.png) <br>
+
+Actualizamos la propiedad del archivo: <br>
+
+- sudo chown -R www-data:www-data /var/www/centro.intranet
+
+Establecemos permisos correctos de los directorios y archivos de WordPress:
+
+- sudo find /var/www/centro.intranet/ -type d -exec chmod 750 {} \;
+- sudo find /var/www/centro.intranet/ -type f -exec chmod 640 {} \;
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/chown_find.png)

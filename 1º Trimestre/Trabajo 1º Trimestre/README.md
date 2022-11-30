@@ -99,3 +99,11 @@ Ahora reiniciaremos apache y lo configuraremos para permitir .htaccess
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/htaccess.png) <br> 
 Y activamos el módulo rewrite <br> 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/enmod_rewrite.png)
+
+Descargar WordPress <br> <br> <br>
+Cambiamos de directorio que permita la escritura con "cd /tmp"<br>
+Descargamos wordpress y lo instalamos con: <br><br>
+
+curl -O https://wordpress.org/latest.tar.gz
+tar xzvf latest.tar.gz <br>
+Nota: Descargar en tmp puede dar errores, en mi caso he tenido que descargarlo en otra carpeta.

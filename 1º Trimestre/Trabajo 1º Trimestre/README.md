@@ -30,8 +30,8 @@ Y comprobaremos  su estado con: sudo systemctl status apache2
 
 Añadir el dominio “centro.intranet” y “departamento.centro.intranet” en el fichero “host” con "nano /etc/hosts" y añadiremos lo siguiente: <br>
 
-127.0.0.1 centro.intranet <br>
-127.0.0.1 departamento.centro.intranet
+- 127.0.0.1 centro.intranet <br>
+- 127.0.0.1 departamento.centro.intranet
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/url_centrointranet.png)
 
@@ -44,11 +44,11 @@ Después de añadir los datos de virtualhost habilitamos el site "sudo a2ensite 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sites_available.png)
 
 Creamos un archivo de configuración para el dominio: <br> <br>
-    sudo nano /etc/apache2/sites-available/departamento.centro.intranet.conf <br> <br>
+- sudo nano /etc/apache2/sites-available/departamento.centro.intranet.conf <br> <br>
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/nano_departamento.png) <br>
 
 Después de añadir los datos de virtualhost habilitamos el site <br>
-sudo a2ensite departamento.centro.intranet <br>
+- sudo a2ensite departamento.centro.intranet <br>
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/a2ensite_departamentocentro.png) 
 
 2. Activar los módulos necesarios para ejecutar php y acceder a mysql. <br> <br>
@@ -79,15 +79,15 @@ Porque no me dejaba acceder. <br>
 
 Y crearemos una base de datos exclusiva para WordPress mediante: <br>
 
-"CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" <br> 
+- "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" <br> 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_database.png)
 
 Creamos un superusuario para la base de datos: <br>
-CREATE USER 'wordpressuser'@'%' IDENTIFIED WITH mysql_native_password BY
+- CREATE USER 'wordpressuser'@'%' IDENTIFIED WITH mysql_native_password BY
 'password'; <br> <br> 
 Damos todos los permisos <br>
-GRANT ALL ON wordpress.* TO 'wordpressuser'@'%'; <br> <br> 
+- GRANT ALL ON wordpress.* TO 'wordpressuser'@'%'; <br> <br> 
 Eliminamos privilegios para que MySQL sepa que cambios hemos realizado con: "FLUSH PRIVILEGES;"
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_user.png) <br <br> 
@@ -105,8 +105,8 @@ Descargar WordPress <br> <br> <br>
 Cambiamos de directorio que permita la escritura con "cd /tmp"<br>
 Descargamos wordpress y lo instalamos con: <br><br>
 
-curl -O https://wordpress.org/latest.tar.gz
-tar xzvf latest.tar.gz <br>
+- curl -O https://wordpress.org/latest.tar.gz
+- tar xzvf latest.tar.gz <br>
 Nota: Descargar en tmp puede dar errores, en mi caso he tenido que descargarlo en otra carpeta.
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/instalar_wordpress.png) <br>
@@ -116,7 +116,7 @@ Ahora crearemos un archivo .htaccess para que wordpress pueda utilizarlo:
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/touch.png) <br>
 Y copiamos el archivo de configuración de muestra al nombre del que lee
 wordpress
-cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php <br>
+- cp /tmp/wordpress/wp-config-sample.php /tmp/wordpress/wp-config.php <br>
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_wordpress.png)
 

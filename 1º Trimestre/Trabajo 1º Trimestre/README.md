@@ -71,7 +71,13 @@ Lo siguiente que haremos será installar PHP con el comando de la imagen: <br>
 3. Instalación y configuración de WordPress. 
 
 Iniciaremos sesión en mysql con  "mysql -u root -p"  permitiéndonos entrar como  usuario root. <br> 
+PD: En mi caso he tenido que establecer una nueva contraseña con: <br> "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';" <br>
+Porque no me dejaba acceder. <br 
+                                 
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sql_root.png)
 
 Y crearemos una base de datos exclusiva para WordPress mediante: <br>
 
 "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" <br> 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_database.png)

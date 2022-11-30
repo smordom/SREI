@@ -124,3 +124,4 @@ Podemos crear el directorio de actualización para que wordpress no tenga proble
 - sudo cp -a /tmp/wordpress/./var/www/centro.intranet <br> <br>
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/mkdir_upgrade.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_wordp_centrointranet.png)

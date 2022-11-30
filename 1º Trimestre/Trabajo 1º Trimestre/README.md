@@ -53,3 +53,26 @@ sudo a2ensite departamento.centro.intranet <br>
 2. Activar los módulos necesarios para ejecutar php y acceder a mysql. <br> <br>
 
 Instalamos MySQL con el comando: sudo apt install mysql-server
+
+![imagen] (https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_mysql.png) <br> 
+
+Y ejecutaremos el siguiente script por temas de seguridad: <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/mysql_secure.png) <br>
+
+Luego comprobaremos con el comando "sudo mysql" que todo está funcionando: <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sudo_mysql.png) <br>
+
+Lo siguiente que haremos será installar PHP con el comando de la imagen: <br> 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_libapache.png) <br>
+
+3. Instalación y configuración de WordPress. 
+
+Iniciaremos sesión en mysql de la siguiente manera: mysql -u root -p <br>
+esto nos permitirá entrar como  usuario root. <br> 
+
+Y crearemos una base de datos exclusiva para WordPress mediante: <br>
+
+"CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" <br> 

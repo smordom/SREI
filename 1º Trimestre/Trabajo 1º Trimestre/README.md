@@ -81,3 +81,12 @@ Y crearemos una base de datos exclusiva para WordPress mediante: <br>
 "CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;" <br> 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_database.png)
+
+Creamos un superusuario para la base de datos: <br>
+CREATE USER 'wordpressuser'@'%' IDENTIFIED WITH mysql_native_password BY
+'password'; <br> 
+Damos todos los permisos <br>
+GRANT ALL ON wordpress.* TO 'wordpressuser'@'%'; <br>
+Eliminamos privilegios para que MySQL sepa que cambios hemos realizado con: "FLUSH PRIVILEGES;"
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_user.png)

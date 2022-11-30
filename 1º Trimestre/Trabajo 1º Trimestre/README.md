@@ -95,3 +95,7 @@ Lo siguiente que haremos será utilizar un "apt get update" e instalaremos las e
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_phpcurl.png) <br> <br>
 
 Ahora reiniciaremos apache y lo configuraremos para permitir .htaccess
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/htaccess.png) <br> 
+Y activamos el módulo rewrite <br> 
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/enmod_rewrite.png)

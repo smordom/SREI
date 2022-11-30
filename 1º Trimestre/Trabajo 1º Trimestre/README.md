@@ -89,4 +89,9 @@ Damos todos los permisos <br>
 GRANT ALL ON wordpress.* TO 'wordpressuser'@'%'; <br> <br> 
 Eliminamos privilegios para que MySQL sepa que cambios hemos realizado con: "FLUSH PRIVILEGES;"
 
-![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_user.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/create_user.png) <br <br> 
+
+Lo siguiente que haremos será utilizar un "apt get update" e instalaremos las extensiones de PHP: <br>
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_phpcurl.png) <br> <br>
+
+Ahora reiniciaremos apache y lo configuraremos para permitir .htaccess

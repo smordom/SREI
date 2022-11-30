@@ -47,8 +47,8 @@ Creamos un archivo de configuración para el dominio: <br> <br>
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/nano_departamento.png) <br>
 
 Después de añadir los datos de virtualhost habilitamos el site <br>
-sudo a2ensite departamento.centro.intranet
-![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/a2ensite_departamentocentro.png)
+sudo a2ensite departamento.centro.intranet <br>
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/a2ensite_departamentocentro.png) 
 
 2. Activar los módulos necesarios para ejecutar php y acceder a mysql. <br> <br>
 

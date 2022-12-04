@@ -164,12 +164,27 @@ Y reiniciamos apache.
 
 ## 6. Añadir protección de acceso a la aplicación python mediante autentificación.
 
-Creamos directorio donde guardar la contraseña
-
-![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/crear_contrase%C3%B1a.png)
-
-Y un archivo donde guardarla la contraseña con el comando: 
+Creamos directorio donde guardar la contraseña y un archivo donde guardarla la contraseña con el comando: <br>
 
 - sudo htpasswd -c /usr/local/apache/passwd/password usuario
 
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/crear_contrase%C3%B1a.png)
+
+Ahora configuraremos el servidor que queramos nos pregunte la contraseña y tengan acceso solo los usuarios que queramos, editando el archivo apache2.conf.
+
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/conf_contrase%C3%B1a.png)
+
+
+## 7. Instalación y configuración de AWSTATS.
+
+Instalamos el paquete awstats con el comando:
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/aptget_awstats.png) <br>
+
+Y también habilitamos el módulo CGI en Apache:
+
+- sudo a2enmod cgi
+
+Ahora creamos el archivo de configuración para cada dominio, en este caso copiando los existentes: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_awstats.png)

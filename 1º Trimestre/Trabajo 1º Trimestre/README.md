@@ -139,6 +139,9 @@ Establecemos permisos correctos de los directorios y archivos de WordPress:
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/chown_find.png)
 
+Ahora contruimos nuestras estadísticas con:
+- sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update
+- sudo /usr/lib/cgi-bin/awstats.pl -config=departamento.centro.intranet -update
 ## 4. Activación del módulo WSGI
 
 Primero instalamos el modulo mediante: "sudo apt-get install libapache2-mod-wsgi-py" <br>
@@ -198,3 +201,23 @@ Ahora editamos los archivos y añadimos lo siguiente:
 Y luego añadiremos en ambos:
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/updatestats.png)
+
+Ahora contruimos nuestras estadísticas con:
+- sudo /usr/lib/cgi-bin/awstats.pl -config=centro.intranet -update
+- sudo /usr/lib/cgi-bin/awstats.pl -config=departamento.centro.intranet -update
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/estadisticas.png)
+
+Configuramos Apache2 para que muestre estas estadísticas. Copiamos el contenido de la carpeta «cgi-bin» en el directorio raíz del documento por defecto de su instalación de Apache.
+
+- sudo cp -r /usr/lib/cgi-bin /var/www/html/
+- sudo chown www-data:www-data /var/www/html/cgi-bin/
+- sudo chmod -R 755 /var/www/html/cgi-bin/
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cgibin.png) <br> 
+
+Una vez hecho esto se pueden acceder a los stats poniendo en el navegador:
+- http://127.0.0.1/cgi-bin/awstats.pl?config=centro.intranet
+- http://127.0.0.1/cgi-bin/awstats.pl?config=departamento.centro.intranet
+
+![Uploading imagen.png…]()

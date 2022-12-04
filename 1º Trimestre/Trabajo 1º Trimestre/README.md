@@ -188,3 +188,13 @@ Y también habilitamos el módulo CGI en Apache:
 Ahora creamos el archivo de configuración para cada dominio, en este caso copiando los existentes: 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cp_awstats.png)
+
+Ahora editamos los archivos y añadimos lo siguiente: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/awstats_centro.png) <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/awstats_departamento.png) <br>
+
+Y luego añadiremos en ambos:
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/updatestats.png)

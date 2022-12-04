@@ -152,5 +152,5 @@ Y creamos una estructura de directorios para nuestra aplicación:
 
 ## 5. Crea y despliega una pequeña aplicación python para comprobar que funciona correctamente. 
 
-Ahora creamos un controlador en nuestra carpeta de mypythonapp
+Ahora creamos un controlador en nuestra carpeta de mypythonapp: 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/controller.py.png)

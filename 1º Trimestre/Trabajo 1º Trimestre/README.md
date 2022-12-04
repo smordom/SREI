@@ -1,4 +1,4 @@
-## Práctica Servidores WEB      1º Trimestre
+# Práctica Servidores WEB      1º Trimestre
 
 Instalación del servidor web apache Usaremos dos dominios mediante el archivo hosts: centro.intranet y departamentos.centro.intranet. El primero servirá el contenido mediante wordpress y el segundo una aplicación en python.
 
@@ -52,7 +52,7 @@ Después de añadir los datos de virtualhost habilitamos el site <br>
 - sudo a2ensite departamento.centro.intranet <br>
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/a2ensite_departamentocentro.png) 
 
-2. Activar los módulos necesarios para ejecutar php y acceder a mysql. <br> <br>
+## 2. Activar los módulos necesarios para ejecutar php y acceder a mysql. <br> <br>
 
 Instalamos MySQL con el comando: sudo apt install mysql-server
 
@@ -70,7 +70,7 @@ Lo siguiente que haremos será installar PHP con el comando de la imagen: <br>
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_libapache.png) <br>
 
-3. Instalación y configuración de WordPress. 
+## 3. Instalación y configuración de WordPress. 
 
 Iniciaremos sesión en mysql con  "mysql -u root -p"  permitiéndonos entrar como  usuario root. <br> 
 PD: En mi caso he tenido que establecer una nueva contraseña con: <br> "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';" <br>

@@ -154,4 +154,22 @@ Y creamos una estructura de directorios para nuestra aplicación:
 
 Ahora creamos un controlador en nuestra carpeta de mypythonapp: <br>
 
-![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/controller.py.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/controller.py.png) <br>
+
+Y configuramos el fichero host con lo siguiente: <br>
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/nano_pythondepart.png) <br>
+
+Y reiniciamos apache.
+
+## 6. Añadir protección de acceso a la aplicación python mediante autentificación.
+
+Creamos directorio donde guardar la contraseña
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/crear_contrase%C3%B1a.png)
+
+Y un archivo donde guardarla la contraseña con el comando: 
+
+- sudo htpasswd -c /usr/local/apache/passwd/password usuario
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/conf_contrase%C3%B1a.png)

@@ -138,3 +138,13 @@ Establecemos permisos correctos de los directorios y archivos de WordPress:
 - sudo find /var/www/centro.intranet/ -type f -exec chmod 640 {} \;
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/chown_find.png)
+
+## 4. Activación del módulo WSGI
+
+Primero instalamos el modulo mediante: "sudo apt-get install libapache2-mod-wsgi-py" <br>
+                                                                                       
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/python_install.png)
+
+Y creamos una estructura de directorios para nuestra aplicación:
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/estructura_python.png)

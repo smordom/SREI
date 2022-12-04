@@ -220,4 +220,4 @@ Una vez hecho esto se pueden acceder a los stats poniendo en el navegador:
 - http://127.0.0.1/cgi-bin/awstats.pl?config=centro.intranet
 - http://127.0.0.1/cgi-bin/awstats.pl?config=departamento.centro.intranet
 
-![imagen](https://user-images.githubusercontent.com/72253934/205515348-ef670252-26bc-4a0c-b66a-c45b7e6339d1.png)
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/stadistics.png)

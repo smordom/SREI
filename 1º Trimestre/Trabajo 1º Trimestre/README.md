@@ -221,3 +221,5 @@ Una vez hecho esto se pueden acceder a los stats poniendo en el navegador:
 - http://127.0.0.1/cgi-bin/awstats.pl?config=departamento.centro.intranet
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/stadistics.png)
+
+8. Instala un segundo servidor de tu elección (nginx, lighttpd) bajo el dominio “servidor2.centro.intranet”. Debes configurarlo para que sirva en el puerto 8080 y haz los cambios necesarios para ejecutar php. Instala phpmyadmin.

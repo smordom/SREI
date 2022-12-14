@@ -223,3 +223,20 @@ Una vez hecho esto se pueden acceder a los stats poniendo en el navegador:
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/stadistics.png)
 
 ## 8. Instala un segundo servidor de tu elección (nginx, lighttpd) bajo el dominio “servidor2.centro.intranet”. Debes configurarlo para que sirva en el puerto 8080 y haz los cambios necesarios para ejecutar php. Instala phpmyadmin.
+
+
+En primer lugar procederemos a instalar el servidor que hayamos elegido: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/install_nginx.png) <br>
+
+Daremos permiso al menos restrictivo: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/ngix%20http.png) <br>
+
+Y crearemos el dominio y cambiaremos los permisos:
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/cosas%20multiples.png)
+
+Y haremos un pequeño index para nuestro servidor: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/index%20nginex.png)

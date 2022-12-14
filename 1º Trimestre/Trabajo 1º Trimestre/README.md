@@ -240,3 +240,27 @@ Y crearemos el dominio y cambiaremos los permisos:
 Y haremos un pequeño index para nuestro servidor: 
 
 ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/index%20nginex.png)
+
+Ahora crearemos el archivo de configuración y lo habilitaremos haciendo un enlace entre él y el directorio "sites-enable": 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/nginx%20sites.png)
+
+Para evitar errores abrimos y modificamos "sudo nano /etc/nginx/nginx.conf", quitando la almohadilla donde la captura:
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/server_names.png)
+
+Comprobamos que no haya errores de sintaxis: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/sintax.png)
+
+Y ahora pasaremos a configurar PHP en nuestro servidor: 
+
+![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/config_php.png)
+
+Aceptaremos todo y le estableceremos la contraseña que querramos. <br>
+
+Creamos un enlace con:
+- sudo ln -s /usr/share/phpmyadmin /var/www/servidor2.centro.intranet/phpmyadmin
+ Y con esto solo tenemos que dirigirnos a la dirección de nuestra página WEB y ya estaría acabado
+ 
+ ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/y_ya.png)

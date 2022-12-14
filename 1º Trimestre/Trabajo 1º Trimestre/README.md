@@ -260,7 +260,7 @@ Y ahora pasaremos a configurar PHP en nuestro servidor:
 Aceptaremos todo y le estableceremos la contraseña que querramos. <br>
 
 Creamos un enlace con:
-- sudo ln -s /usr/share/phpmyadmin /var/www/servidor2.centro.intranet/phpmyadmin
+- sudo ln -s /usr/share/phpmyadmin /var/www/servidor2.centro.intranet/phpmyadmin <br>
  Y con esto solo tenemos que dirigirnos a la dirección de nuestra página WEB y ya estaría acabado
  
  ![imagen](https://github.com/smordom/SREI/blob/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre/Capturas/y_ya.png)

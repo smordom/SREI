@@ -74,11 +74,11 @@ Una vez instalado tenemos que editar su archivo de configuración, donde configu
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221399293-092c74a0-ab52-47ce-8996-a804017d82fe.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221399339-12b9f5b5-1d16-418e-a831-2515ea36b389.png) <br>
-![imagen](https://user-images.githubusercontent.com/72253934/221399405-d9069deb-8fe0-4732-a6ac-cb10a8a2db0d.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221399405-d9069deb-8fe0-4732-a6ac-cb10a8a2db0d.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221399430-a9e7baf9-1ffe-459f-ac9f-e41eacf64709.png)
 <br> <br> 
 
 Escribimos el siguiente comando para comprobar si hay errores de sintaxis:
-- sudo proftpd -t
+- sudo proftpd -t <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221399872-f2a91501-5156-4512-970e-469c92a50e3e.png)
 

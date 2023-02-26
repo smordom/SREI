@@ -28,4 +28,57 @@ por defecto. <br>
 En la carpeta HTML crearemos una carpeta de usuario con un index.html para que tenga una página web diferente a la de por defecto. <br>
 Al haber instalado php tambien podríamos añadir una página dinámica.
 ![imagen](https://user-images.githubusercontent.com/72253934/221397684-a418f428-81c0-4356-959b-03a493f7d51c.png) <br>
-![imagen](https://user-images.githubusercontent.com/72253934/221397697-5155bbcd-6d20-484c-9900-d7532b2b5033.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221397697-5155bbcd-6d20-484c-9900-d7532b2b5033.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221397731-960068db-bd11-4ed2-a2df-ef2cf463cbac.png)
+
+3. Además contarán con una base de datos sql que podrán administrar con phpmyadmin. <br>
+
+Instalamos MySQL con:
+- sudo apt install mysql-server
+
+![imagen](https://user-images.githubusercontent.com/72253934/221398124-5d9b857f-9eb0-43fe-8f8e-e32430127f6f.png)
+<br>
+Instalamos phpMyAdmin con: 
+
+-sudo apt install phpmyadmin <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221398170-b29379f5-8857-44c5-b2ec-8e7bb7725246.png)
+
+Seleccionamos sí: 
+
+![imagen](https://user-images.githubusercontent.com/72253934/221398224-7ae03e24-6ca8-4082-88c5-9229c5000d06.png) <br>
+
+Y ponemos una contraseña: 
+![imagen](https://user-images.githubusercontent.com/72253934/221398258-c82b4062-3022-41b7-819e-2591ab41259f.png) <br>
+
+Al buscar localhost/phpmyadmin/ en el navegador, no mostraba la página principal de php por lo cual también hemos <br>
+lo siguiente: <br>
+- sudo -H gedit /etc/apache2/apache2.conf
+![imagen](https://user-images.githubusercontent.com/72253934/221398663-801ea4d8-cb3f-4785-a7be-0875b241f534.png) <br>
+
+Añadimos al final del archivo:
+Include /etc/phpmyadmin/apache.conf <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221398693-b6ac9912-d495-42a3-a976-c26c50b24166.png) <br>
+
+Y reiniciamos apache:
+- /etc/init.d/apache2 restart <br>
+
+Y ya estaría funcionando la página principal de Apache: 
+![imagen](https://user-images.githubusercontent.com/72253934/221398770-cfac64a7-8bd7-4d02-93fb-043a75edcaaa.png) <br> <br>
+
+4. Los clientes podrán acceder mediante ftp para la administración de
+archivos configurando adecuadamente TLS.
+
+Instalamos ftp con el mando sudo apt-get install proftpd <br>
+
+Una vez instalado tenemos que editar su archivo de configuración, donde configuraremos el nombre del servidor, usuarios: <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221399293-092c74a0-ab52-47ce-8996-a804017d82fe.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221399339-12b9f5b5-1d16-418e-a831-2515ea36b389.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221399405-d9069deb-8fe0-4732-a6ac-cb10a8a2db0d.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221399430-a9e7baf9-1ffe-459f-ac9f-e41eacf64709.png)
+<br> <br> 
+
+Escribimos el siguiente comando para comprobar si hay errores de sintaxis:
+- sudo proftpd -t
+![imagen](https://user-images.githubusercontent.com/72253934/221399872-f2a91501-5156-4512-970e-469c92a50e3e.png)
+

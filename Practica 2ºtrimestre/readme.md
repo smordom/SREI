@@ -40,7 +40,7 @@ Instalamos MySQL con:
 <br>
 Instalamos phpMyAdmin con: 
 - sudo apt install phpmyadmin <br>
-- 
+
 ![imagen](https://user-images.githubusercontent.com/72253934/221398170-b29379f5-8857-44c5-b2ec-8e7bb7725246.png)
 
 Seleccionamos sí: 

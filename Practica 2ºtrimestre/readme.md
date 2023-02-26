@@ -19,7 +19,7 @@ Y comprobaremos  su estado con: sudo systemctl status apache2 <br>
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221395943-c06e684a-bf42-4731-9c52-a9ed594ebb18.png) <br>
 
-Ahora instalaremos PHP: 
+Ahora instalaremos PHP: <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221396028-e98ec48b-af6c-413f-a6ec-b5fa6b7ed89f.png) <br>
 
 2. Los clientes dispondrán de un directorio de usuario con una página web

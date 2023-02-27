@@ -1,6 +1,6 @@
 # Práctica Servidores WEB      2º Trimestre
 
-1. Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”. <br>
+## 1. Se dará alojamiento a páginas web tanto estáticas como dinámicas con “php”. <br>
 Actualizamos nuestros repositorios con "sudo apt update",
 ![imagen](https://user-images.githubusercontent.com/72253934/221395514-9f0825ff-1b33-44cd-925d-03eee69d5953.png) <br>
 E instalamos php con "sudo apt install apache2"
@@ -22,7 +22,7 @@ Y comprobaremos  su estado con: sudo systemctl status apache2 <br>
 Ahora instalaremos PHP: <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221396028-e98ec48b-af6c-413f-a6ec-b5fa6b7ed89f.png) <br>
 
-2. Los clientes dispondrán de un directorio de usuario con una página web
+## 2. Los clientes dispondrán de un directorio de usuario con una página web
 por defecto. <br>
 
 En la carpeta HTML crearemos una carpeta de usuario con un index.html para que tenga una página web diferente a la de por defecto. <br>
@@ -31,7 +31,7 @@ Al haber instalado php tambien podríamos añadir una página dinámica.
 ![imagen](https://user-images.githubusercontent.com/72253934/221397697-5155bbcd-6d20-484c-9900-d7532b2b5033.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221397731-960068db-bd11-4ed2-a2df-ef2cf463cbac.png)
 
-3. Además contarán con una base de datos sql que podrán administrar con phpmyadmin. <br>
+## 3. Además contarán con una base de datos sql que podrán administrar con phpmyadmin. <br>
 
 Instalamos MySQL con:
 - sudo apt install mysql-server
@@ -65,7 +65,7 @@ Y reiniciamos apache:
 Y ya estaría funcionando la página principal de Apache: 
 ![imagen](https://user-images.githubusercontent.com/72253934/221398770-cfac64a7-8bd7-4d02-93fb-043a75edcaaa.png) <br> <br>
 
-4. Los clientes podrán acceder mediante ftp para la administración de
+## 4. Los clientes podrán acceder mediante ftp para la administración de
 archivos configurando adecuadamente TLS.
 
 Instalamos ftp con el mando sudo apt-get install proftpd <br>
@@ -192,7 +192,7 @@ También se puede acceder desde sftp, como hemos personalizado el puerto en vez 
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221657574-5e567479-cac3-42af-9f9d-04135eadd1e2.png) <br>
 
-6. Se configura de forma adecuada postfix y dovecot imap y pop3
+## 6. Se configura de forma adecuada postfix y dovecot imap y pop3
 
 El primer paso es la instalación de postfix, thunderbird con imapd y pop3d. 
 
@@ -227,4 +227,14 @@ En la configuración manual podemos seleccionar el tipo de seguridad y los puert
 
 Hemos utilizado solo POP3, sin embargo podemos añadir en Configuración de las cuentas otro protocolo al mismo correo: <br>
 
-![imagen](https://user-images.githubusercontent.com/72253934/221665052-d33f660e-d162-45a2-8f12-5bc40d10d151.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221665052-d33f660e-d162-45a2-8f12-5bc40d10d151.png) <br>
+
+7. Se automatizará mediante el uso de scripts:
+- La creación de usuarios y del directorio correspondiente para el alojamiento web
+- Host virtual en apache
+- Creación de usuario del sistema para acceso a ftp, ssh, smtp, ...
+- Se creará un subdominio en el servidor DNS con las resolución directa e inversa <br>
+
+El primer Script que realizaremos erá para la creación de nuevos usuarios, encargado de pedir nombre/contraseña y acto seguido creará una carpeta con el nombre del usuario en la carpeta HTML de var. <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221667326-0656446a-b41d-49dd-81d5-fa5366879248.png) <br>

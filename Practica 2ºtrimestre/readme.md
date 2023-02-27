@@ -163,4 +163,17 @@ Y reiniciamos el servicio como hemos hecho anteriormente con: <br>
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221625601-88d666bf-c017-47f4-8a10-df577431000c.png) <br>
 
-Una vez hecho esto desde filezilla con la ip, el usuario y contraseña podremos acceder a los archivos del sistema.
+Una vez hecho esto desde filezilla con la ip, el usuario y contraseña podremos acceder a los archivos del sistema.<br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221648534-ce87cb8f-a0f0-4e8f-ad11-55325dcec871.png)
+
+ ## 5. Se habilitará el acceso mediante ssh y sftp. <br>
+ 
+El primer paso es instalar el paquete openssh con el comando: <br>
+
+- sudo apt-get install openssh-server openssh-server
+
+![imagen](https://user-images.githubusercontent.com/72253934/221649355-45bcb04e-4b49-4f9e-a54e-d148213c35ec.png) <br>
+
+Una vez instalado editamos el archivo de configuración en sudo nano /etc/ssh/sshd_config, modificamos el puerto para evitar accesos indebidos, añadimos el usuario que queremos que tenga permisos y si queremos evitamos acceso al root por ssh.
+

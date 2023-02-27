@@ -82,3 +82,4 @@ Escribimos el siguiente comando para comprobar si hay errores de sintaxis:
 - sudo proftpd -t <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221399872-f2a91501-5156-4512-970e-469c92a50e3e.png)
 
+###### DNS

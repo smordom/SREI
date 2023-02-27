@@ -238,3 +238,5 @@ Hemos utilizado solo POP3, sin embargo podemos añadir en Configuración de las 
 El primer Script que realizaremos erá para la creación de nuevos usuarios, encargado de pedir nombre/contraseña y acto seguido creará una carpeta con el nombre del usuario en la carpeta HTML de var. <br>
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221667326-0656446a-b41d-49dd-81d5-fa5366879248.png) <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221670087-3f7a5dbc-b656-4fab-a7d8-29c350594bac.png) <br>

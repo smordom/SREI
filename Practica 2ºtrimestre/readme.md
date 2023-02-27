@@ -105,5 +105,31 @@ Editamos el otro archivo de configuración: <br>
 <br>
 
 Fichero hosts: 
-![imagen](https://user-images.githubusercontent.com/72253934/221599339-89cf0597-6803-4f8c-b142-fd0f6bf583be.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221599339-89cf0597-6803-4f8c-b142-fd0f6bf583be.png) 
+<br>
+
+Comprobamos que el DNS contesta con: <br>
+
+- dig google.com
+
+![imagen](https://user-images.githubusercontent.com/72253934/221611456-daf9b553-8a08-44d5-87b1-8fec27d18821.png)
+<br>
+
+Y con esto ya habríamos configurado el DNS. <br>
+
+Ahora bien, para acceder mediante TLS, debemos instalar OpenSSL con el comando: <br>
+
+- apt-get install proftpd openssl <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221611999-c60b8359-6e7f-4a7c-aa45-122b3b119cfb.png)
+<br>
+
+Una vez instalado creamos un directorio donde guardar nuestros certificados llamado ssl con: <br>
+- sudo mkdir /etc/proftpd/ssl
+<br>
+
+Introducimos el siguiente comando para generar los certificados: 
+- sudo openssl req -new -x509 -days 365 -nodes -out /etc/proftpd/ssl/proftpd.cert.pem -keyout /etc/proftpd/ssl/proftpd.key.pem
+
+![imagen](https://user-images.githubusercontent.com/72253934/221613879-333fe879-a06e-422a-9d0e-44881831864c.png)
+<br> 
 

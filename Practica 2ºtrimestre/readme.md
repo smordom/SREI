@@ -229,7 +229,7 @@ Hemos utilizado solo POP3, sin embargo podemos añadir en Configuración de las 
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221665052-d33f660e-d162-45a2-8f12-5bc40d10d151.png) <br>
 
-7. Se automatizará mediante el uso de scripts:
+## 7. Se automatizará mediante el uso de scripts:
 - La creación de usuarios y del directorio correspondiente para el alojamiento web
 - Host virtual en apache
 - Creación de usuario del sistema para acceso a ftp, ssh, smtp, ...

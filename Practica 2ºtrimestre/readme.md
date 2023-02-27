@@ -91,7 +91,9 @@ El primer paso es instalar bind con los comandos: <br>
 Editamos el archivo de configuración: <br>
 - sudo nano /etc/bind/named.conf.local 
 <br>
+
 ![imagen](https://user-images.githubusercontent.com/72253934/221599908-8f9a7dcd-1fb0-470b-a64b-81f99e92b83d.png)
+
 <br>
 
 Fichero hosts: 

@@ -104,7 +104,7 @@ Editamos el otro archivo de configuración: <br>
 
 <br>
 
-Fichero hosts: 
+Fichero hosts: <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221599339-89cf0597-6803-4f8c-b142-fd0f6bf583be.png) 
 <br>
 

@@ -160,5 +160,6 @@ Y reiniciamos el servicio como hemos hecho anteriormente con: <br>
 - Systemctl restart proftpd.service
 - Systemctl status proftpd.service
 <br> 
+
 ![imagen](https://user-images.githubusercontent.com/72253934/221625601-88d666bf-c017-47f4-8a10-df577431000c.png)
 

@@ -240,3 +240,38 @@ El primer Script que realizaremos erá para la creación de nuevos usuarios, enc
 ![imagen](https://user-images.githubusercontent.com/72253934/221667326-0656446a-b41d-49dd-81d5-fa5366879248.png) <br>
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221670087-3f7a5dbc-b656-4fab-a7d8-29c350594bac.png) <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221670667-c6b5319b-d8dc-445c-b1d7-3037155ba7a9.png) <br>
+
+Lo siguiente será un script de creación de subdominio. Añadiremos creac_subdominio.sh"usuario""ip" para evitar un aviso de error. <br>
+
+El script creará el nombre del subdominio y lo añade a nuestra base de datos. Crea una carpeta personal en /home y otra en /var/www/html y le dará permisos. Actualizará el fichero de zona y añadirá el nombre del subdominio y ip, acto seguido lo reiniciará. <br>
+
+- useradd -s /bin/bash $USER
+- passwd $USER
+
+![imagen](https://user-images.githubusercontent.com/72253934/221684497-1fdbf411-8cac-47fa-a075-10e93b1880f9.png) <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221684418-9aedb091-36eb-43bf-8706-0dbcabb79fbf.png) <br>
+
+Una vez ejecutado el script podemos comprobar que se han hecho todas esas modificaciones <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221684845-6d642132-7f3d-4a11-9812-e6022fe0fed2.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221684955-96c0af20-2357-4e8c-aca5-d2763dca3af3.png) <br>
+
+
+Para la creación de virtual hosts utilizamos este script, se ejecuta como sudo sh crear_vhosts.sh “usuario”. <br> 
+El script se encarga de editar el archivos de configuración de apache sites-available. <br>
+Se crea una carpeta en var/www/html con el nombre del usuario ya creado y un index por defecto con el nombre del subdominio y el usuario. <br>
+Dentro de sites-available se añade toda la configuración del virtualhost con el subdominio del usuario que usamos y se ajusta como documentroot la carpeta de
+/var/www/html/”usuario”. <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221690326-66eef32a-faf3-4c30-99f6-76cf91169122.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221690391-480ccb65-1389-4834-829f-af2b4918645a.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221690687-ceaf6e9d-9f53-48fd-b8b7-adaf9581e082.png) <br>
+
+Y ahora comprobamos las modificaciones del script.
+![imagen](https://user-images.githubusercontent.com/72253934/221691120-81ec0b79-fe9f-4a03-aee0-851428af673b.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221691247-0119bafa-123d-40cd-bcb1-28cbb79051bd.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221691388-21596b48-2357-4f22-9db4-2c4a7a3594bd.png)
+

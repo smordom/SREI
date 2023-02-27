@@ -270,7 +270,7 @@ Dentro de sites-available se añade toda la configuración del virtualhost con e
 ![imagen](https://user-images.githubusercontent.com/72253934/221690391-480ccb65-1389-4834-829f-af2b4918645a.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221690687-ceaf6e9d-9f53-48fd-b8b7-adaf9581e082.png) <br>
 
-Y ahora comprobamos las modificaciones del script.
+Y ahora comprobamos las modificaciones del script. <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221691120-81ec0b79-fe9f-4a03-aee0-851428af673b.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221691247-0119bafa-123d-40cd-bcb1-28cbb79051bd.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221691388-21596b48-2357-4f22-9db4-2c4a7a3594bd.png)

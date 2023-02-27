@@ -175,5 +175,56 @@ El primer paso es instalar el paquete openssh con el comando: <br>
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221649355-45bcb04e-4b49-4f9e-a54e-d148213c35ec.png) <br>
 
-Una vez instalado editamos el archivo de configuración en sudo nano /etc/ssh/sshd_config, modificamos el puerto para evitar accesos indebidos, añadimos el usuario que queremos que tenga permisos y si queremos evitamos acceso al root por ssh.
+Una vez instalado editamos el archivo de configuración en sudo nano /etc/ssh/sshd_config, modificamos el puerto para evitar accesos indebidos, añadimos el usuario que queremos que tenga permisos y si queremos evitamos acceso al root por ssh. <br>
 
+![imagen](https://user-images.githubusercontent.com/72253934/221651206-1910b9cc-5496-443d-9015-bfe40e46fa2d.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221651340-2760fc93-a0e2-4977-8e5b-e145fea6c473.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/221651454-1845ff6d-fd9c-40bd-8a5b-995d24a1d528.png) <br>
+
+Escribimos sudo service ssh restart para reiniciar el servicio. <br>
+
+Una vez hecho esto podemos acceder desde otro equipo en la misma red con el comando ssh -p (puerto) (usuario)@(ip de la maquina a la que nos queremos
+conectar)
+
+![imagen](https://user-images.githubusercontent.com/72253934/221653167-f9f30d0d-71ab-415c-ac2f-08866342afe1.png) <br>
+
+También se puede acceder desde sftp, como hemos personalizado el puerto en vez de utilizar el por defecto tenemos que escribir sftp -oPort=(puerto)(usuario)@(ip de la maquina a la que nos queremos conectar)
+
+![imagen](https://user-images.githubusercontent.com/72253934/221657574-5e567479-cac3-42af-9f9d-04135eadd1e2.png) <br>
+
+6. Se configura de forma adecuada postfix y dovecot imap y pop3
+
+El primer paso es la instalación de postfix, thunderbird con imapd y pop3d. 
+
+- sudo apt install postfix dovecot-imapd dovecot-pop3d mailutils thunderbird
+
+![imagen](https://user-images.githubusercontent.com/72253934/221657963-9f62f990-b0e1-4c9e-90a8-5d7981cd2784.png) <br>
+
+Una vez instalado posfix editamos main.cf , añadimos en mydestination marisma.local.
+
+![imagen](https://user-images.githubusercontent.com/72253934/221659961-4a990fbe-6ef8-4b35-877d-04115d073436.png) <br>
+
+Y ahora creamos un usuario con adduser, al que mandarle correos.
+
+![imagen](https://user-images.githubusercontent.com/72253934/221660528-d8c31c6c-8ddc-49c8-bac2-077d3f128cf2.png) <br>
+
+Para enviar correos desde un usuario escribimos: 
+- echo “contenido” | mail -s “asunto” samu@marisma.local
+
+Los correos del servidor siempre van con nombre de dominio <br>
+
+Ahora nos loggeamos con el usuario al que le hemos enviado el correo y con el comando mail podemos comprobar que lo ha recibido.
+                                                                
+![imagen](https://user-images.githubusercontent.com/72253934/221663378-657c3e07-3783-4661-87f1-d78e9227ebdb.png) <br>
+
+Para configurar thunderbird entramos en la aplicación y añadimos el usuario con su respectivo correo de dominio
+
+![imagen](https://user-images.githubusercontent.com/72253934/221663744-0e38877d-2a79-4a45-90d4-7115886d3d11.png) <br>
+
+En la configuración manual podemos seleccionar el tipo de seguridad y los puertos de los diferentes protocolos, tenemos instalados los protocolos IMAP y POP3, el protocolo IMAP trabaja por defecto con el puerto 143 y el POP3 con el puerto 110.
+
+![imagen](https://user-images.githubusercontent.com/72253934/221664336-0e027ef0-85fc-44ce-bae1-841d54783207.png) <br>
+
+Hemos utilizado solo POP3, sin embargo podemos añadir en Configuración de las cuentas otro protocolo al mismo correo: <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221665052-d33f660e-d162-45a2-8f12-5bc40d10d151.png)

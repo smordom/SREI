@@ -133,3 +133,32 @@ Introducimos el siguiente comando para generar los certificados:
 ![imagen](https://user-images.githubusercontent.com/72253934/221613879-333fe879-a06e-422a-9d0e-44881831864c.png)
 <br> 
 
+Le daremos permisos de escritura/lectura al usuario propietario únicamente:
+
+- sudo chmod 600 /etc/proftpd/ssl/proftpd.*
+
+![imagen](https://user-images.githubusercontent.com/72253934/221614778-5e18ecd7-25f6-4d21-84d5-51fa2642549b.png)
+<br>
+
+Para habilitar TLS en ProFTPd nos vamos a :
+- nano /etc/proftpd/proftpd.conf <br>
+y debajo de la línea comentada #This is used for FTPS Connections descomentamos: <br>
+
+- Include /etc/proftpd/tls.conf
+
+Ahora abrimos el archivo de configuración de TLS con sudo nano
+/etc/proftpd/tls.conf descomentamos las rutas del certificado y modificamos
+opciones.
+
+![imagen](https://user-images.githubusercontent.com/72253934/221621067-463cc2c0-12e4-40c4-a975-30f9951d121d.png)
+<br> 
+
+![imagen](https://user-images.githubusercontent.com/72253934/221621238-8593a376-f1d0-4f1b-a487-d8067171971f.png) <br>
+
+Y reiniciamos el servicio como hemos hecho anteriormente con: <br>
+
+- Systemctl restart proftpd.service
+- Systemctl status proftpd.service
+<br> 
+![imagen](https://user-images.githubusercontent.com/72253934/221625601-88d666bf-c017-47f4-8a10-df577431000c.png)
+

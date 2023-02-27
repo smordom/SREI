@@ -47,7 +47,7 @@ Seleccionamos sí:
 
 ![imagen](https://user-images.githubusercontent.com/72253934/221398224-7ae03e24-6ca8-4082-88c5-9229c5000d06.png) <br>
 
-Y ponemos una contraseña: 
+Y ponemos una contraseña: <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/221398258-c82b4062-3022-41b7-819e-2591ab41259f.png) <br>
 
 Al buscar localhost/phpmyadmin/ en el navegador, no mostraba la página principal de php por lo cual también hemos <br>

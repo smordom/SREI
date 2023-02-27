@@ -161,5 +161,6 @@ Y reiniciamos el servicio como hemos hecho anteriormente con: <br>
 - Systemctl status proftpd.service
 <br> 
 
-![imagen](https://user-images.githubusercontent.com/72253934/221625601-88d666bf-c017-47f4-8a10-df577431000c.png)
+![imagen](https://user-images.githubusercontent.com/72253934/221625601-88d666bf-c017-47f4-8a10-df577431000c.png) <br>
 
+Una vez hecho esto desde filezilla con la ip, el usuario y contraseña podremos acceder a los archivos del sistema.

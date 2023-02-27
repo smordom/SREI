@@ -83,3 +83,17 @@ Escribimos el siguiente comando para comprobar si hay errores de sintaxis:
 ![imagen](https://user-images.githubusercontent.com/72253934/221399872-f2a91501-5156-4512-970e-469c92a50e3e.png)
 
 ## DNS
+
+El primer paso es instalar bind con los comandos: <br>
+- sudo apt-get update
+- sudo apt-get install bind9 bind9utils bind9-doc
+<br>
+Editamos el archivo de configuración: <br>
+- sudo nano /etc/bind/named.conf.local 
+<br>
+![imagen](https://user-images.githubusercontent.com/72253934/221599908-8f9a7dcd-1fb0-470b-a64b-81f99e92b83d.png)
+<br>
+
+Fichero hosts: 
+![imagen](https://user-images.githubusercontent.com/72253934/221599339-89cf0597-6803-4f8c-b142-fd0f6bf583be.png)
+

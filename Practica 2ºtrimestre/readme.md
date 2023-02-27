@@ -88,7 +88,15 @@ El primer paso es instalar bind con los comandos: <br>
 - sudo apt-get update
 - sudo apt-get install bind9 bind9utils bind9-doc
 <br>
-Editamos el archivo de configuración: <br>
+
+Editamos el primer archivo de configuración con: <br>
+
+-sudo nano /etc/bind/named.conf.options <br>
+
+![imagen](https://user-images.githubusercontent.com/72253934/221602148-ab43b3e4-9408-439d-a1e9-0e8365f48ddc.png)
+<br>
+
+Editamos el otro archivo de configuración: <br>
 - sudo nano /etc/bind/named.conf.local 
 <br>
 

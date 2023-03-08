@@ -47,7 +47,7 @@ Práctica 2.
 8.
 ![imagen](https://user-images.githubusercontent.com/72253934/223851443-1744ed50-4bad-4e73-be8c-750e51e90fd9.png) <br>
 
-9 y 10.
+9 y 10. <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223851515-3e935393-afdd-4685-beba-95f0fe097306.png) <br>
 
 11.
@@ -57,7 +57,7 @@ Práctica 2.
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223851812-7b927445-1ab2-4a23-81cc-9de52cef1e54.png) <br>
 
-## ## Practica 4
+#### PRACTICA 4
 
 
 Segunda parte: 

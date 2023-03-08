@@ -21,7 +21,7 @@ Práctica 2.
 ![imagen](https://user-images.githubusercontent.com/72253934/223850223-be04d8d7-2f84-49ec-8985-de1674882bba.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223850269-74cc7930-5946-4864-a3b0-953164ead458.png)
 
-Práctica 3.
+## ## Práctica 3. <br>
 1.
 ![imagen](https://user-images.githubusercontent.com/72253934/223850746-8ac9d248-4d82-43c8-b124-70e62799ab61.png) <br>
 

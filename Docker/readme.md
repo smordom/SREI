@@ -15,7 +15,11 @@ Práctica 2.
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223849529-faabf4d4-12f5-4e85-81a2-f41d92d5ac30.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223849564-2530d7d8-b650-40d7-a0ee-9c1888a9aea0.png) <br> 
-![imagen](https://user-images.githubusercontent.com/72253934/223849609-d5d3a6bc-d841-4dff-b447-a864a7c2327f.png)
+![imagen](https://user-images.githubusercontent.com/72253934/223849609-d5d3a6bc-d841-4dff-b447-a864a7c2327f.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223850001-3a9ef3d2-b389-4e70-bba4-029535fab758.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223850065-d9fdfd85-3f4b-43b1-bd99-c8039d163d00.png)
+
+
 
 
 Práctica 3.

@@ -161,21 +161,36 @@ volumes:
 ![imagen](https://user-images.githubusercontent.com/72253934/223855274-dbbccec2-b626-48ed-acf1-8e40b6f3dcd9.png)
 
 
-Practica 6
+#### Practica 6
 
+Versión 1: <br>
+Trabajaremos apartir del fichero proporcionado de la guía que aparece en el enunciado: <br>
+```Dockerfile
+FROM debian
+RUN apt-get update && apt-get install -y apache2 && apt-get clean && rm -rf /var/lib/apt/lists/*
+ADD public_html /var/www/html/
+EXPOSE 80
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+```
 
+![imagen](https://user-images.githubusercontent.com/72253934/223855751-559f5b44-9dcb-40f2-91cf-bdb70f9bdd93.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223855802-c3d1eac6-4f3d-4da3-90bd-c562c7ba80dc.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223855841-9ee4bb5d-597f-46f0-a6e9-8051501785b7.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223855869-272aa5c9-2348-47c3-a66d-f04874926158.png) <br>
 
-version 2
+Versión 2: <br>
 
+```Dockerfile
 FROM httpd:2.4
 ADD public_html /usr/local/apache2/htdocs/
 EXPOSE 80
+```
+![imagen](https://user-images.githubusercontent.com/72253934/223856454-e86c486f-1e4a-4296-964e-8b45091b1745.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223856498-c0ef579f-89f3-4d9b-93ab-e77e9d3b8cce.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223856574-d23e9f71-a82e-45b8-9819-b64c88bd3b49.png) <br>
 
 
-
-
-
-Version 3: 
+Versión 3: 
 
 
 

@@ -59,22 +59,6 @@ Práctica 2.
 
 #### PRACTICA 4
 
-Utilizaremos el siguient archivo yml en nuestro directorio: <br>
-
-```yaml
-version: '3.1'
-services:
-  app:
-    container_name: guestbook
-    image: iesgn/guestbook
-    restart: always
-    ports:
-      - 80:5000
-  db:
-    container_name: redis
-    image: redis
-    restart: always
-```
 Creamos la red:  <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223852918-0e7613a3-6692-4738-9f61-5433a7890a9a.png) <br>
 
@@ -101,17 +85,79 @@ Tercer ejercicio: <br>
 —---------------------------------------------------------------------------------------------------------------------
 
 Práctica 5
-Utilizando el fichero que nos proporciona hacemos esto 
 
+Destacar en esta práctica que trabajaremos siempre con el fichero que nos proporciona la guía, en este primer ejemplo será el fichero Dockerfile con el siguiente contenido: <br> 
 
+```yaml
+version: '3.1'
+services:
+  app:
+    container_name: guestbook
+    image: iesgn/guestbook
+    restart: always
+    ports:
+      - 80:5000
+  db:
+    container_name: redis
+    image: redis
+    restart: always
+```
+![imagen](https://user-images.githubusercontent.com/72253934/223855027-34922953-4397-4510-bb4c-7f892a4ff981.png)
 
-—---------------------------------------------------------------------------------------------------------------------
+—--------------------------------------------------------------------------------------------------------------------- <br>
+En este utilizaremos el siguiente fichero yml: <br>
+```yaml
+version: '3.1'
+services:
+  frontend:
+    container_name: temperaturas-frontend
+    image: iesgn/temperaturas_frontend
+    restart: always
+    ports:
+      - 80:3000
+    depends_on:
+      - backend
+  backend:
+    container_name: temperaturas-backend
+    image: iesgn/temperaturas_backend
+    restart: always
+```
+![imagen](https://user-images.githubusercontent.com/72253934/223855124-e1e7d16b-cf52-4059-8c6b-7b08ab96e03d.png)
 
+—--------------------------------------------------------------------------------------------------------------------- <br>
 
-
-—---------------------------------------------------------------------------------------------------------------------
-
-
+```yaml
+version: '3.1'
+services:
+  wordpress:
+    container_name: servidor_wp
+    image: wordpress
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: user_wp
+      WORDPRESS_DB_PASSWORD: asdasd
+      WORDPRESS_DB_NAME: bd_wp
+    ports:
+      - 80:80
+    volumes:
+      - wordpress_data:/var/www/html/wp-content
+  db:
+    container_name: servidor_mysql
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_DATABASE: bd_wp
+      MYSQL_USER: user_wp
+      MYSQL_PASSWORD: asdasd
+      MYSQL_ROOT_PASSWORD: asdasd
+    volumes:
+      - mariadb_data:/var/lib/mysql
+volumes:
+    wordpress_data:
+    mariadb_data:
+```
+![imagen](https://user-images.githubusercontent.com/72253934/223855274-dbbccec2-b626-48ed-acf1-8e40b6f3dcd9.png)
 
 
 Practica 6

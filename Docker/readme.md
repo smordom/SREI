@@ -59,20 +59,43 @@ Práctica 2.
 
 #### PRACTICA 4
 
+Utilizaremos el siguient archivo yml en nuestro directorio: <br>
 
-Segunda parte: 
+```yaml
+version: '3.1'
+services:
+  app:
+    container_name: guestbook
+    image: iesgn/guestbook
+    restart: always
+    ports:
+      - 80:5000
+  db:
+    container_name: redis
+    image: redis
+    restart: always
+```
+Creamos la red:  <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223852918-0e7613a3-6692-4738-9f61-5433a7890a9a.png) <br>
 
+Y ponemos a funcionar el contenedor: <br>
 
+![imagen](https://user-images.githubusercontent.com/72253934/223853013-448fb028-4597-4e3b-b92a-d9fdb28c1dda.png) <br>
 
-Tercera parte: 
+![imagen](https://user-images.githubusercontent.com/72253934/223853073-ea63c02d-4617-4cd8-90e3-1817242a30cf.png) <br>
 
+Segundo ejercicio: <br>
 
+Basicamente haremos lo mismo pero con otra aplicación, por lo tanto dejaré las capturas con los comandos <br>
 
+![imagen](https://user-images.githubusercontent.com/72253934/223853345-72312afb-c2e9-4c7d-8f22-0833c41e3903.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223853412-597f0012-d83b-4882-beae-d12ab84a33df.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223853550-9fe90909-a172-4b4f-aabf-25742be134de.png) <br>
 
+Tercer ejercicio: <br> 
 
-
-
-
+![imagen](https://user-images.githubusercontent.com/72253934/223853898-f60610c0-6141-4f70-88fb-e6dc43ef8356.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223853955-5038402f-3f96-4102-8d38-b9173109d842.png)
 
 
 —---------------------------------------------------------------------------------------------------------------------

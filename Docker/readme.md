@@ -1,7 +1,7 @@
 
- ## Prácticas docker.
+## PRÁCTICAS DOCKER.
 
-Práctica 2.
+## Práctica 2.
 
 1.
 ![imagen](https://user-images.githubusercontent.com/72253934/223849404-aa726491-9d53-4953-afa1-3a90a0e0de96.png)
@@ -21,7 +21,7 @@ Práctica 2.
 ![imagen](https://user-images.githubusercontent.com/72253934/223850223-be04d8d7-2f84-49ec-8985-de1674882bba.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223850269-74cc7930-5946-4864-a3b0-953164ead458.png)
 
-#### Práctica 3. <br>
+## Práctica 3. <br>
 1.
 ![imagen](https://user-images.githubusercontent.com/72253934/223850746-8ac9d248-4d82-43c8-b124-70e62799ab61.png) <br>
 
@@ -57,7 +57,7 @@ Práctica 2.
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223851812-7b927445-1ab2-4a23-81cc-9de52cef1e54.png) <br>
 
-#### PRACTICA 4
+## PRACTICA 4
 
 Creamos la red:  <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223852918-0e7613a3-6692-4738-9f61-5433a7890a9a.png) <br>
@@ -85,7 +85,7 @@ Tercer ejercicio: <br>
 —---------------------------------------------------------------------------------------------------------------------------------
 <br>
 
-Práctica 5
+## Práctica 5
 
 Destacar en esta práctica que trabajaremos siempre con el fichero que nos proporciona la guía, en este primer ejemplo será el fichero Dockerfile con el siguiente contenido: <br> 
 
@@ -161,8 +161,9 @@ volumes:
 ![imagen](https://user-images.githubusercontent.com/72253934/223855274-dbbccec2-b626-48ed-acf1-8e40b6f3dcd9.png)
 
 
-#### Practica 6
+## Practica 6
 
+Construcción de imágenes con una página estática. <br> 
 Versión 1: <br>
 Trabajaremos apartir del fichero proporcionado de la guía que aparece en el enunciado: <br>
 ```Dockerfile
@@ -187,11 +188,15 @@ EXPOSE 80
 ```
 ![imagen](https://user-images.githubusercontent.com/72253934/223856454-e86c486f-1e4a-4296-964e-8b45091b1745.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223856498-c0ef579f-89f3-4d9b-93ab-e77e9d3b8cce.png) <br>
+
+
+Versión 3:  <br>
+```Dockerfile
+FROM nginx
+ADD public_html /usr/share/nginx/html
+EXPOSE 80
+```
 ![imagen](https://user-images.githubusercontent.com/72253934/223856574-d23e9f71-a82e-45b8-9819-b64c88bd3b49.png) <br>
-
-
-Versión 3: 
-
 
 
 parte 2:

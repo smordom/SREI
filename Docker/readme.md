@@ -178,7 +178,10 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 ![imagen](https://user-images.githubusercontent.com/72253934/223855751-559f5b44-9dcb-40f2-91cf-bdb70f9bdd93.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223855802-c3d1eac6-4f3d-4da3-90bd-c562c7ba80dc.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223855841-9ee4bb5d-597f-46f0-a6e9-8051501785b7.png) <br>
-![imagen](https://user-images.githubusercontent.com/72253934/223855869-272aa5c9-2348-47c3-a66d-f04874926158.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223892120-6f0133de-a31d-437e-838a-0081a3ad5b94.png) <br> 
+![imagen](https://user-images.githubusercontent.com/72253934/223892310-b263e8a0-2c8b-45bb-a3c5-86420da13811.png)
+
+
 
 Versión 2: <br>
 
@@ -189,7 +192,7 @@ EXPOSE 80
 ```
 ![imagen](https://user-images.githubusercontent.com/72253934/223856454-e86c486f-1e4a-4296-964e-8b45091b1745.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223856498-c0ef579f-89f3-4d9b-93ab-e77e9d3b8cce.png) <br>
-![imagen](https://user-images.githubusercontent.com/72253934/223892120-6f0133de-a31d-437e-838a-0081a3ad5b94.png)
+
 
 
 Versión 3:  <br>

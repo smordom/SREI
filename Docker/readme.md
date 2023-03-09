@@ -223,3 +223,6 @@ EXPOSE 3000
 CMD [ "python3", "app.py"]
 ```
 ![imagen](https://user-images.githubusercontent.com/72253934/223857695-70aee21f-2b3d-4b0d-8f89-272db05e0417.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223890473-64b586e1-bbda-420c-85ed-a4db78cbc16a.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223890698-aec18323-72de-46c6-b1fd-a4cd8d41c9cf.png) <br>
+

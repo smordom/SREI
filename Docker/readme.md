@@ -3,58 +3,75 @@
 
 ## Práctica 2.
 
-1.
+1. Ejecuta la imagen "hello-world"
 ![imagen](https://user-images.githubusercontent.com/72253934/223849404-aa726491-9d53-4953-afa1-3a90a0e0de96.png)
 
 
-2. 
+2. Muestra las imágenes Docker instaladas
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223849464-31f24af6-ed76-4384-b7a6-492237fc6414.png)
 
-3.
+3. Muestra los contenedores Docker
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223849529-faabf4d4-12f5-4e85-81a2-f41d92d5ac30.png) <br>
+
+Edita el fichero Dockerfile <br>
+
 ![imagen](https://user-images.githubusercontent.com/72253934/223849564-2530d7d8-b650-40d7-a0ee-9c1888a9aea0.png) <br> 
+
+Construye el contenedor <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223849609-d5d3a6bc-d841-4dff-b447-a864a7c2327f.png) <br>
+
+Ejecútalo <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223850001-3a9ef3d2-b389-4e70-bba4-029535fab758.png) <br>
+
+Publícalo <br>
+
 ![imagen](https://user-images.githubusercontent.com/72253934/223850065-d9fdfd85-3f4b-43b1-bd99-c8039d163d00.png) <br>
+
+
 ![imagen](https://user-images.githubusercontent.com/72253934/223850223-be04d8d7-2f84-49ec-8985-de1674882bba.png) <br>
+
+
 ![imagen](https://user-images.githubusercontent.com/72253934/223850269-74cc7930-5946-4864-a3b0-953164ead458.png)
 
 ## Práctica 3. <br>
-1.
+1.Descarga la imagen de ubuntu
 ![imagen](https://user-images.githubusercontent.com/72253934/223850746-8ac9d248-4d82-43c8-b124-70e62799ab61.png) <br>
 
-2.
+2.Descarga la imagen de hello-world
 
 ![imagen](https://user-images.githubusercontent.com/72253934/223850892-d552529c-0958-491a-91df-7b0fcfe7cffb.png) <br>
 
-3.
+3.Descarga la imagen nginx
 ![imagen](https://user-images.githubusercontent.com/72253934/223850983-b24f89ee-fecb-405f-9a89-06734a8efd68.png) <br>
 
-4.
+4. Muestra un listado de todas la imágenes
 ![imagen](https://user-images.githubusercontent.com/72253934/223851152-f716c533-73f3-47fa-94c4-e2c3d4d3bf2d.png) <br>
 
-5.
+5.Ejecuta un contenedor hello-world y dale nombre “myhello1”
 ![imagen](https://user-images.githubusercontent.com/72253934/223851206-60757ac0-b6f5-4dbf-a773-ebf5848b3d34.png) <br>
 
-6.
+6. Ejecuta un contenedor hello-world y dale nombre “myhello2”
 ![imagen](https://user-images.githubusercontent.com/72253934/223851274-f191ec83-13c2-4390-9f81-4e56c2e671a1.png) <br>
 
-7.
+7. Ejecuta un contenedor hello-world y dale nombre “myhello3”
 ![imagen](https://user-images.githubusercontent.com/72253934/223851340-b881e191-dc01-4f63-8447-021ec41f603a.png) <br>
 
-8.
+8. Muestra los contenedores que se están ejecutando
 ![imagen](https://user-images.githubusercontent.com/72253934/223851443-1744ed50-4bad-4e73-be8c-750e51e90fd9.png) <br>
 
-9 y 10. <br>
+9 y 10. Para el contenedor "myhello1” y "myhello2" <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223851515-3e935393-afdd-4685-beba-95f0fe097306.png) <br>
 
-11.
+11.Borra el contenedor “myhello1” 
 ![imagen](https://user-images.githubusercontent.com/72253934/223851547-77f22ce9-875d-4100-8bf6-f64ba8e0e14d.png) <br>
 
-12.
+12.Muestra los contenedores que se están ejecutando.
 
+- Docker ps -a (se me pasó ponerlo)
+
+13. Borra todos los contenedores
 ![imagen](https://user-images.githubusercontent.com/72253934/223851812-7b927445-1ab2-4a23-81cc-9de52cef1e54.png) <br>
 
 ## PRACTICA 4

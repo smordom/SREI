@@ -178,8 +178,7 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 ![imagen](https://user-images.githubusercontent.com/72253934/223855751-559f5b44-9dcb-40f2-91cf-bdb70f9bdd93.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223855802-c3d1eac6-4f3d-4da3-90bd-c562c7ba80dc.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223855841-9ee4bb5d-597f-46f0-a6e9-8051501785b7.png) <br>
-![imagen](https://user-images.githubusercontent.com/72253934/223892120-6f0133de-a31d-437e-838a-0081a3ad5b94.png) <br> 
-![imagen](https://user-images.githubusercontent.com/72253934/223892310-b263e8a0-2c8b-45bb-a3c5-86420da13811.png)
+
 
 
 
@@ -204,11 +203,20 @@ EXPOSE 80
 ![imagen](https://user-images.githubusercontent.com/72253934/223856574-d23e9f71-a82e-45b8-9819-b64c88bd3b49.png) <br>
 
 
-parte 2:
+Construcción de imágenes con una una aplicación PHP. <br>
+
+```Dockerfile
+FROM debian
+RUN apt-get update && apt-get install -y apache2 libapache2-mod-php7.4 php7.4 && apt-get clean && rm -rf /var/lib/apt/lists/*
+ADD app /var/www/html/
+RUN rm /var/www/html/index.html
+EXPOSE 80
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+```
 
 
-
-
+![imagen](https://user-images.githubusercontent.com/72253934/223892120-6f0133de-a31d-437e-838a-0081a3ad5b94.png) <br> 
+![imagen](https://user-images.githubusercontent.com/72253934/223892310-b263e8a0-2c8b-45bb-a3c5-86420da13811.png)
 
 
 

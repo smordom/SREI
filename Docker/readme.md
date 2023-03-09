@@ -203,7 +203,9 @@ EXPOSE 80
 ![imagen](https://user-images.githubusercontent.com/72253934/223856574-d23e9f71-a82e-45b8-9819-b64c88bd3b49.png) <br>
 
 
-Construcción de imágenes con una una aplicación PHP. <br>
+## Construcción de imágenes con una una aplicación PHP. <br>
+
+Versión 1: <br>
 
 ```Dockerfile
 FROM debian
@@ -219,12 +221,18 @@ CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
 ![imagen](https://user-images.githubusercontent.com/72253934/223892310-b263e8a0-2c8b-45bb-a3c5-86420da13811.png)
 
 
-
 version 2:
 
-----------------------------------------------------------------------------------------------------------------------------------<br>
+```Dockerfile
+FROM php:7.4-apache
+ADD app /var/www/html/
+EXPOSE 80
+```
+![imagen](https://user-images.githubusercontent.com/72253934/223893761-6d39d593-19fe-4bb8-960e-ccd455c5d84c.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223893805-3b054bf5-4d17-44a1-9469-6758fae53db5.png) <br>
 
-Construcción de imágenes con una una aplicación Python: <br>
+
+## Construcción de imágenes con una una aplicación Python: <br>
 ```Dockerfile
 FROM debian
 RUN apt-get update && apt-get install -y python3-pip  && apt-get clean && rm -rf /var/lib/apt/lists/*

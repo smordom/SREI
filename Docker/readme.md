@@ -189,6 +189,7 @@ EXPOSE 80
 ```
 ![imagen](https://user-images.githubusercontent.com/72253934/223856454-e86c486f-1e4a-4296-964e-8b45091b1745.png) <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223856498-c0ef579f-89f3-4d9b-93ab-e77e9d3b8cce.png) <br>
+![imagen](https://user-images.githubusercontent.com/72253934/223892120-6f0133de-a31d-437e-838a-0081a3ad5b94.png)
 
 
 Versión 3:  <br>

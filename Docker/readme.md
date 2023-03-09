@@ -46,7 +46,7 @@ Publícalo <br>
 3.Descarga la imagen nginx <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223850983-b24f89ee-fecb-405f-9a89-06734a8efd68.png) <br>
 
-4. Muestra un listado de todas la imágenes <br>
+4.Muestra un listado de todas la imágenes <br>
 ![imagen](https://user-images.githubusercontent.com/72253934/223851152-f716c533-73f3-47fa-94c4-e2c3d4d3bf2d.png) <br>
 
 5.Ejecuta un contenedor hello-world y dale nombre “myhello1” <br>

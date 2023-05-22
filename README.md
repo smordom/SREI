@@ -5,4 +5,4 @@
 | [Trabajo 1º Trimestre](https://github.com/smordom/SREI/tree/main/1%C2%BA%20Trimestre/Trabajo%201%C2%BA%20Trimestre)   |  Práctica servidor Web trimestal     |
 | [Trabajo 2º Trimestre](https://github.com/smordom/SREI/blob/main/Practica%202%C2%BAtrimestre/readme.md) | Práctica 2º Trimestre |
 | [DOCKER](https://github.com/smordom/SREI/tree/main/Docker)      |  Práctica DOCKER     |
-| [Practica Docker recuperación]  (https://github.com/smordom/SREI/tree/main/Recudocker) | Recuperacion 1º Trimestre |
+| [Practica Docker recuperación](https://github.com/smordom/SREI/tree/main/Recudocker) | Recuperacion 1º Trimestre |

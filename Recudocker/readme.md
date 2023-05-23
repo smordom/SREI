@@ -11,5 +11,5 @@ Luego realizamos un:
  
  ![imagen](https://github.com/smordom/SREI/assets/72253934/fd7e16a5-2f1b-4ffe-8ba8-4b32e414e16b)
 
-Y comprobamos que esté funcionando por el puerto 8080:
+Y comprobamos que esté funcionando por el puerto 8080: <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/8022b27d-6e73-4906-8029-4f5ba14c7dcb)

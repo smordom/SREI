@@ -17,7 +17,7 @@ Y comprobamos que esté funcionando por el puerto 8080: <br>
 
 En primer lugar lo que haremos será descargar la imagen mediante:
 - docker pull mysql <br>
-![imagen](https://github.com/smordom/SREI/assets/72253934/4a39ca61-cfb7-447d-b5c3-a0c63ba404ae)
+![imagen](https://github.com/smordom/SREI/assets/72253934/4a39ca61-cfb7-447d-b5c3-a0c63ba404ae) <br>
 
 Una vez hecho esto podremos iniciaremos el contenedor y comprobamos que está funcionando correctamente: <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/a5322516-1144-4541-8e19-8ec4c5628484)

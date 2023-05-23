@@ -22,4 +22,6 @@ En primer lugar lo que haremos será descargar la imagen mediante:
 Una vez hecho esto podremos iniciaremos el contenedor y comprobamos que está funcionando correctamente: <br> <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/a5322516-1144-4541-8e19-8ec4c5628484)
 
+Aquí realizaremos un docker exec para acceder a nuestro contenedor y usar mysql: <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/eff88581-11f9-4eba-89d2-12053690c3f0)
+

@@ -62,4 +62,11 @@ services:
 volumes:
   db_data:
 ```
-![imagen](https://github.com/smordom/SREI/assets/72253934/62fd8787-a83f-48d5-ba30-af2f6fc55647)
+Una vez hecho esto hacemos un:
+- docker-compose up -d
+<br>
+
+![imagen](https://github.com/smordom/SREI/assets/72253934/62fd8787-a83f-48d5-ba30-af2f6fc55647) <br> 
+
+Y así nuestro contenedor con Wordpress estaría funcionando de manera correcta.
+

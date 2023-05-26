@@ -29,3 +29,6 @@ Ahora configuraremos MySQL y crearemos un usuario y le daremos permisos: <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/133b22c4-7dee-4ea6-b21b-0e6f91128b64) <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/caa9e449-d3fa-465f-8186-adb2ae5b1ea8) <br>
 
+Para instalar Wordpress lo primero que haremos será crear la siguiente estructura y un archivo yml: <br>
+![imagen](https://github.com/smordom/SREI/assets/72253934/2c7fca5e-ca2d-488e-b02e-af324ff990d3) <br>
+

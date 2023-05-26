@@ -25,7 +25,7 @@ Una vez hecho esto podremos iniciaremos el contenedor y comprobamos que está fu
 Aquí realizaremos un docker exec para acceder a nuestro contenedor y usar mysql: <br> <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/eff88581-11f9-4eba-89d2-12053690c3f0)
 
-Ahora configuraremos MySQL y crearemos un usuario y le daremos permisos: <br>
+Ahora configuraremos MySQL y crearemos un usuario y le daremos permisos: <br> <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/133b22c4-7dee-4ea6-b21b-0e6f91128b64) <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/caa9e449-d3fa-465f-8186-adb2ae5b1ea8) <br>
 

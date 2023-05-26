@@ -86,8 +86,7 @@ services:
     ports:
       - "8080:80"
 ```
-<br>
-![imagen](https://github.com/smordom/SREI/assets/72253934/3088af11-f171-431c-a4d6-532c513185b6) <br>
+![imagen](https://github-production-user-asset-6210df.s3.amazonaws.com/72253934/241195162-3088af11-f171-431c-a4d6-532c513185b6.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230526%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230526T111743Z&X-Amz-Expires=300&X-Amz-Signature=b2454119e3204c4e9548ec265d13c11ff9e334799e350125f11acca6f0519f5f&X-Amz-SignedHeaders=host&actor_id=72253934&key_id=0&repo_id=542439151)
 
 Lo siguiente que haremos será montar nuestro contenedor con:
 

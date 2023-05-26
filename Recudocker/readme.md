@@ -1,6 +1,6 @@
  ## Recuperación de Docker 1º Trimestre 
 
-#### 1.Instalación del servidor web apache mediante docker.
+#### 1. Instalación del servidor web apache mediante docker.
 
 Actualizamos los repositorios con:
 - "sudo apt update" <br>

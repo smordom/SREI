@@ -32,3 +32,34 @@ Ahora configuraremos MySQL y crearemos un usuario y le daremos permisos: <br>
 Para instalar Wordpress lo primero que haremos será crear la siguiente estructura y un archivo yml: <br>
 ![imagen](https://github.com/smordom/SREI/assets/72253934/2c7fca5e-ca2d-488e-b02e-af324ff990d3) <br>
 
+El archivo yml contendrá la siguiente información: 
+
+```version: '3'
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: 1234
+
+  wordpress:
+    depends_on:
+      - db
+    image: wordpress:latest
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: 1234
+      WORDPRESS_DB_NAME: wordpress
+volumes:
+  db_data:
+```
+![imagen](https://github.com/smordom/SREI/assets/72253934/62fd8787-a83f-48d5-ba30-af2f6fc55647)

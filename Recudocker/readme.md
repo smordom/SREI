@@ -72,3 +72,53 @@ Una vez hecho esto hacemos un:
 
 Y así nuestro contenedor con Wordpress estaría funcionando de manera correcta.
 
+#### 4. Configuración AWSTATS
+
+En primer lugar crearemos una carpeta para awstats, y crearemos un docker-compose con la siguiente información:
+
+```
+version: '3'
+services:
+  awstats:
+    image: justb4/awstats:latest
+    volumes:
+      - ./data:/etc/awstats
+    ports:
+      - "8080:80"
+```
+<br>
+![imagen](https://github.com/smordom/SREI/assets/72253934/3088af11-f171-431c-a4d6-532c513185b6)
+
+Lo siguiente que haremos será montar nuestro contenedor con:
+
+- docker-compose up-d <br> 
+![imagen](https://github.com/smordom/SREI/assets/72253934/eaf379b7-61aa-4cf3-9362-b80a30e32831)
+
+<br>
+
+Y accederemos a localhost para comprobar que funciona: <br>
+
+![imagen](https://github.com/smordom/SREI/assets/72253934/0e4102d5-34c5-420d-a92a-f8bb0664400b)
+
+Ahora mismo no nos está mostrando datos porque AWSTATS necesita tener una carpeta data en el lugar donde se ha montado el contenedor y añadirle la información a mostrar.
+
+#### 5. Servidor NGINX con PHP.
+
+Para crear nuestro servidor NGINX con PhP, lo primero que haremos será crear una carpeta de trabajo. Dentro crearemos un archivo yml con el nombre docker-compose.yml y añadiremos la siguiente información en él: <br> 
+
+![imagen](https://github.com/smordom/SREI/assets/72253934/129a4460-b0ff-4ee3-b669-7ac23467002b) <br> <br> 
+
+Una vez hecho esto también crearemos un archivo llamado "defaul.conf" al cual añadiremos la siguiente información: <br> <br> 
+![imagen](https://github.com/smordom/SREI/assets/72253934/23d45c26-679f-400d-aa12-a5d1ae78d9ff) <br>
+Así pues levantaremos nuestro contenedor una vez más con:
+- docker-compose up -d <br>
+
+Esto generará una carpeta nombrada "src", aquí dentro haremos un archivo index.php con el siguiente contenido:
+
+```
+<?php
+  echo phpinfo();
+  
+```
+Y finalmente accederemos a nuestro localhost para comprobar que nos muestra la información:
+![imagen](https://github.com/smordom/SREI/assets/72253934/2638cd6d-bf39-47b0-a6fe-2a733190df00)

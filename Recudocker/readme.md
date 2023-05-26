@@ -92,6 +92,7 @@ services:
 Lo siguiente que haremos será montar nuestro contenedor con:
 
 - docker-compose up-d <br> 
+-
 ![imagen](https://github.com/smordom/SREI/assets/72253934/eaf379b7-61aa-4cf3-9362-b80a30e32831)
 
 <br>

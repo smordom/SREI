@@ -87,12 +87,11 @@ services:
       - "8080:80"
 ```
 <br>
-![imagen](https://github.com/smordom/SREI/assets/72253934/3088af11-f171-431c-a4d6-532c513185b6)
+![imagen](https://github.com/smordom/SREI/assets/72253934/3088af11-f171-431c-a4d6-532c513185b6) <br>
 
 Lo siguiente que haremos será montar nuestro contenedor con:
 
 - docker-compose up-d <br> 
--
 ![imagen](https://github.com/smordom/SREI/assets/72253934/eaf379b7-61aa-4cf3-9362-b80a30e32831)
 
 <br>

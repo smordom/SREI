@@ -72,7 +72,35 @@ Una vez hecho esto hacemos un:
 
 Y así nuestro contenedor con Wordpress estaría funcionando de manera correcta.
 
-#### 4. Configuración AWSTATS
+#### 4. Modulo WSGI
+
+Creamos una carpeta de trabajo con un archivo Dockerfile, el cual contendrá lo siguiente: 
+
+```
+FROM python:3.6
+
+
+RUN apt-get -qq update
+RUN apt-get install --yes apache2 apache2-dev
+RUN pip install mod_wsgi
+
+RUN mkdir /code
+WORKDIR /code
+
+COPY . /code/
+
+CMD mod_wsgi-express start-server /code/project_name/wsgi.py --user www-data --group www-data
+```
+<br>
+Y una vez hecho esto lo montamos con "Docker-build" y lo ejecutamos con "Docker run" tal y como en la captura. <br>
+
+![imagen](https://github.com/smordom/SREI/assets/72253934/25c425bb-9576-4231-b030-fb0ba7626fd6)
+
+Y así tendríamos nuestro 
+
+![imagen](https://github.com/smordom/SREI/assets/72253934/36021e60-3e04-433a-8b2a-08d99ed998b0)
+
+#### 5. Configuración AWSTATS
 
 En primer lugar crearemos una carpeta para awstats, y crearemos un docker-compose con la siguiente información:
 
